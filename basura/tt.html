@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Page Title</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<meta name="author" content="Marc Rubio" />
+		<meta name="description" content="IFCD0110" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			fieldset {
+				background-color: rgb(211, 211, 211);
+			}
+			legend {
+				background-color: rgb(122, 122, 122);
+				color: white;
+			}
+			div {
+				margin: auto;
+				margin-top: 2px;
+				width: 50%;
+				padding: 2px;
+				border: 2px solid red;
+			}
+			form div div {
+				border: 2px solid blue;
+			}
+			form div div div {
+				border: 2px solid green;
+				text-align: right;
+			}
+			.pade {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			#caja {
+				border: 3px solid orange;
+				height: 60px;
+				width: 250px;
+				overflow: hidden;
+				position: relative;
+			}
+			#caja::after {
+				top: 0;
+				right: 0;
+				position: absolute;
+				background-color: orange;
+				width: 50px;
+				height: 50px;
+				padding-top: 22px;
+				content: "\025be";
+				pointer-events: none;
+				text-align: center;
+			}
+			select {
+				font-size: 30px;
+				height: 60px;
+				width: 250px;
+				background-color: purple;
+			}
+			select optgroup {
+				background-color: green;
+			}
+			select option {
+				background-color: blue;
+			}
+			optgroup option:checked {
+				background-color: red;
+			}
+			.tar {
+				width: 10px;
+				height: 10px;
+			}
+			.button {
+				width: 30%;
+				background-color: green;
+				color: white;
+			}
+			.button2 {
+				width: 30%;
+				background-color: red;
+				float: right;
+				color: white;
+			}
+			.button2:hover {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>asd</legend>
+				<br />
+				<div>
+					<label>Datos personales</label>
+					<br />
+					<div>
+						<label for="nombre">Nombre</label>
+						<input
+							type="text"
+							name="nombre"
+							placeholder="name"
+							autofocus
+							required
+						/>
+					</div>
+					<div>
+						<label for="phone">Telefono</label>
+						<input type="tel" name="phone" value="666996699" disabled />
+						<input type="tel" name="phone" value="666996699" />
+					</div>
+					<div>
+						<input type="email" name="email" value="marcpoblenou@gmail.com" />
+					</div>
+					<br />
+				</div>
+				<div>
+					<label>Selector</label>
+					<div>
+						<div>
+							<input type="radio" name="radius" value="1" checked />
+							<label for="program"> 1</label>
+						</div>
+						<div>
+							<input type="radio" name="radius" value="2" />
+							<label for="program"> 2</label>
+						</div>
+						<div>
+							<input type="radio" name="radius" value="3" />
+							<label for="program"> 3</label>
+						</div>
+					</div>
+				</div>
+				<div>
+					<textarea style="width: 50px; height: 50px"></textarea>
+				</div>
+				<div class="pade">
+					<div id="caja">
+						<select>
+							<optgroup label="hola">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3" selected>3</option>
+							</optgroup>
+							<optgroup label="grupo2">
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+							</optgroup>
+							<option value="4">4</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<label for="numero">Numero</label>
+					<input type="number" name="numero" min="1" max="10" value="3" />
+				</div>
+				<div>
+					<label>Fechas</label>
+					<div>
+						<label for="semana">Semana</label>
+						<input type="week" name="semana" value="2022-W20" />
+					</div>
+					<div>
+						<label for="mes">Mes</label>
+						<input type="month" name="mes" value="2022-04" />
+					</div>
+					<div>
+						<label for="date">Fecha</label>
+						<input type="date" name="date" value="2000-11-03" />
+					</div>
+				</div>
+				<div>
+					<input type="file" name="file" accept=".png" />
+				</div>
+				<div>
+					<input class="button" type="submit" value="SEND" />
+					<input class="button2" type="reset" value="BORRAR" />
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

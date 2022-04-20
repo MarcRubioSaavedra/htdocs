@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta name="author" content="Marc Rubio" />
+    <meta name="description" content="IFCD0110" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: gray;
+      }
+      #caja {
+        border: 3px solid orange;
+        height: 60px;
+        width: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+      #caja::after {
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        padding-top: 22px;
+        content: "\025be";
+        pointer-events: none;
+        text-align: center;
+        font-size: 30px;
+      }
+      select {
+        font-size: 30px;
+        height: 60px;
+        width: 250px;
+      }
+      a::after {
+        content: " (" attr(href) ")";
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <a href="https://www.w3schools.com/css/default.asp"
+      >https://www.w3schools.com/css/default.asp</a
+    >
+    <br />
+    <br />
+    <a href="https://www.w3schools.com/css/default.asp"
+      >https://www.w3schools.com/css/default.asp</a
+    >
+    <br />
+    <br />
+    <div id="caja">
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </body>
+</html>

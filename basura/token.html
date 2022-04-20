@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Profe" />
+    <title></title>
+    <style>
+      .center {
+        margin: auto;
+        width: 50%;
+        padding: 40px;
+        text-align: center;
+        background-color: rgb(109, 109, 238);
+        border: 2px solid rgb(164, 1, 185);
+      }
+      form input {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(0, 0, 0)">
+    <div></div>
+    <div class="center">
+      <form action="./saves.php" method="get" target="_blank">
+        <fieldset>
+          <legend>Titulon</legend>
+          <p>
+            Name user:
+            <input
+              type="text"
+              name="nameuser"
+              id="nameUser"
+              placeholder="name user"
+            />
+          </p>
+          <br />
+          <br />
+          <p>
+            Email:
+            <input type="password" name="mail" value="<?php echo $name;?>" />
+          </p>
+          <br />
+          <br />
+          <p>Password: <input type="tel" name="password" /></p>
+          <br />
+          <br />
+          <input
+            type="radio"
+            name="radio"
+            onclick="document.getElementById('nameUser').disabled=false;"
+          />
+          <label for="program"> Guardar</label>
+          <br />
+          <br />
+          <input
+            type="radio"
+            name="radio"
+            onclick="document.getElementById('nameUser').disabled=true;"
+          />
+          <label for="program"> Login</label>
+          <br />
+          <br />
+          <input type="submit" value="guardar" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

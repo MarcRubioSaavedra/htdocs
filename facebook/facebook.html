@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Page Title</title>
+		<meta name="author" content="Marc Rubio" />
+		<meta name="description" content="IFCD0110" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			.div1 {
+				background-color: #4267b2;
+				margin: auto;
+				width: 100%;
+				height: 120px;
+				overflow: auto;
+				font-family: monospace;
+			}
+			.div2 {
+				width: 50%;
+				padding-top: 20px;
+				padding-left: 60px;
+				float: left;
+				color: white;
+			}
+			.div3 {
+				width: 30%;
+				float: right;
+				margin-top: 30px;
+				color: white;
+			}
+			.div4 {
+				background-color: red;
+				overflow: auto;
+			}
+			.div5 {
+				width: 30%;
+				margin: auto;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div2">
+				<h1>FACEBOOK</h1>
+			</div>
+			<div class="div3">
+				<form>
+					<label for="mail">Correo o telefono</label>
+					<input type="mail" id="name" name="Correo o teléfono" />
+					<br />
+					<label for="mail">Contraseña</label>
+					<input type="password" id="password" name="Contraseña" />
+					<input type="submit" value="entrar" />
+					<br />
+					<br />
+					<input type="checkbox" value="checkbox" />No cerrar sesion
+					<a
+						href="https://es-es.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+						style="color: white"
+						>¿Has olvidado tu contraseña?</a
+					>
+				</form>
+			</div>
+		</div>
+		<div class="div4">
+			<div class="div5">
+				<h1>Registrate</h1>
+				<p><b>Es gratis y lo será siempre</b></p>
+				<input type="name" id="name" name="nombre" placeholder="Nombre" />
+				<input
+					type="fname"
+					id="fname"
+					name="apellido"
+					placeholder="Apellidos"
+				/>
+				<br />
+				<br />
+				<input
+					type="mail"
+					id="mail"
+					name="correo"
+					size="46"
+					placeholder="Correo electrónico o número de móvil"
+				/>
+				<br />
+				<br />
+				<input
+					type="mail"
+					id="mail"
+					name="correo"
+					size="46"
+					placeholder="Vuelve a introducir el correo electrónico o el número de móvil"
+				/>
+				<br />
+				<br />
+				<input
+					type="password"
+					id="password"
+					name="contraseña"
+					size="46"
+					placeholder="Contraseña nueva"
+				/>
+				<br />
+				<p><b>Fecha de nacimiento</b></p>
+				<input
+					type="number"
+					name="dia"
+					min="1"
+					max="31"
+					value="dia"
+					placeholder="Día"
+				/>
+				<input
+					type="number"
+					name="mes"
+					min="1"
+					max="12"
+					value="mes"
+					placeholder="Mes"
+				/>
+				<input
+					type="number"
+					name="year"
+					min="0"
+					max="2022"
+					value="dia"
+					placeholder="Año"
+				/>
+				<a href="">¿Por que tengo que dar mi fecha de nacimiento?</a>
+				<br />
+				<input type="radio" name="Mujer" value="Hombe" />
+				<label for="program"> Hombre</label>
+				<input type="radio" name="Mujer" value="Mujer" />
+				<label for="program"> Mujer</label>
+			</div>
+		</div>
+	</body>
+</html>

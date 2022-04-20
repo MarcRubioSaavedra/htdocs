@@ -1,0 +1,64 @@
+body {
+	background-color: #a74bfd;
+}
+.main {
+	background-color: rgb(75, 63, 247);
+	margin: 5%;
+	padding: 5px 5px;
+	border-radius: 5px;
+	border: solid;
+	border-color: red;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.center {
+	margin: auto;
+	width: 30%;
+	padding: 20px;
+	text-align: center;
+	border: 3px solid red;
+}
+label {
+	text-align: left;
+	display: block;
+}
+.input_text {
+	width: 99%;
+}
+table {
+	border-style: solid;
+	border-radius: 5px;
+	border-width: none;
+	border-color: red;
+	width: 30%;
+	margin: auto;
+	font-family: Lucida Console;
+	font-size: 20px;
+	background-color: purple;
+}
+.asd {
+	margin-left: 20px;
+}
+
+th {
+	padding-right: 10px;
+	margin: 5px;
+	background-color: red;
+	color: white;
+}
+.green {
+	background-color: green;
+}
+.red {
+	background-color: red;
+}
+
+tbody {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}

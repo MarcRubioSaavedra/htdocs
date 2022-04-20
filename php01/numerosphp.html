@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Page Title</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<meta name="author" content="Marc Rubio" />
+		<meta name="description" content="IFCD0110" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				background-color: rgb(97, 210, 255);
+			}
+			legend {
+				border: 2px solid rgb(116, 116, 116);
+				background-color: aqua;
+			}
+			div {
+				margin: auto;
+				width: auto;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="guardado.php" method="get">
+			<fieldset>
+				<legend>ASDF</legend>
+				<div>
+					<div>
+						<label for="numero">Numero</label>
+						<br />
+						<input type="number" name="numero" />
+					</div>
+					<br />
+					<div>
+						<label for="numero">Edad</label>
+						<br />
+						<input type="number" name="edad" />
+					</div>
+					<br />
+					<div>
+						<input type="submit" value="SEND" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
